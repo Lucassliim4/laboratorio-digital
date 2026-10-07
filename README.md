@@ -1,5 +1,4 @@
 # Laboratório Digital de Qualidade da Água & Biofiltro
-
 OBJETIVO: 
 Desenvolver, em PHP, uma aplicação web que simule um laboratório digital de testes de qualidade da água, calculando indicadores a partir de dados inseridos pelo usuário (medidos manualmente em campo/laboratório ou fornecidos como dataset simulado), classificando a água segundo padrões de potabilidade, e modelando o efeito de um biofiltro experimental sobre esses indicadores, validando toda a lógica de cálculo por meio de unitários automatizados com PHPUnit.
 
