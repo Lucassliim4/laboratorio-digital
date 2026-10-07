@@ -26,7 +26,8 @@ class LabAguaTest extends TestCase
         classificarPh(-1.0);
     }
 
-    // --- MÓDULO B: TURBIDEZ (CT-05 a CT-08) ---
+    
+    
     public function test_ct05_turbidez_em_nivel_tolerado() {
         $this->assertEquals("Conforme", classificarTurbidez(2.5));
     }
@@ -44,7 +45,8 @@ class LabAguaTest extends TestCase
         classificarTurbidez(-2.0);
     }
 
-    // --- MÓDULO C: CLORO RESIDUAL (CT-09 a CT-12) ---
+    
+
     public function test_ct09_cloro_valido() {
         $this->assertEquals("Adequado", classificarCloro(2.0));
     }
@@ -81,7 +83,8 @@ class LabAguaTest extends TestCase
         classificarDureza(-10.0);
     }
 
-    // --- MÓDULO E: CAMPOS NULOS (CT-17 a CT-20) ---
+   
+
     public function test_ct17_omissao_ph() {
         $this->expectException(InvalidArgumentException::class);
         classificarPh(null);
